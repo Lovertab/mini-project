@@ -1,8 +1,37 @@
 * {
-    margin: 0;
-    pad: 0;
+    /* margin: 0;
+    pad: 0; */
+    border: 5px solid blue;
+    box-sizing: border-box;
+
 }
 
 :root {
     --dark: black;
+}
+
+
+
+
+/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+    body {
+        background-color: #8ac4ff;
+    }
+}
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+    body {
+        background: #772014;
+    }
+}
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+    body {
+        background-color: #bb8588;
+    }
 }
